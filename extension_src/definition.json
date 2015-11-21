@@ -1,0 +1,13 @@
+{
+    "integrationUser": {
+        "systemAdmin": false
+    },
+    "osapps": [
+        {
+            "id": "27471d0f-c18a-4400-8c19-67a10b0ff643",
+            "name": "Simple App Skeleton",
+            "appPath": "27471d0fc18a44008c1967a10b0ff643",
+            "url": "%serviceURL%/jive/osapps/simpleapp/xml"
+        }
+    ]
+}

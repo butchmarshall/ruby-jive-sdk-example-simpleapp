@@ -1,0 +1,53 @@
+development:
+  module_prefs:
+    title: __MSG_moduleprefs_title__
+    description: __MSG_moduleprefs_description__
+    author: Butch Marshall
+    author_affiliation: TemboSocial
+    author_email: butch.a.marshall@gmail.com
+  features:
+    - dynamic-height
+    - dynamic-width
+    - jive-core-v3
+    - jive-core-v3-resolver
+    - jive-core-v2
+    - osapi
+    - settitle
+    - views
+    - opensocial-data
+    - embedded-experiences
+    - opensocial-data
+    - selection
+    - jquery-1.6
+    - settitle
+    - views
+    - opensocial:
+        version: 2.5
+  locales:
+    en:
+      moduleprefs_title: The Best app Ever
+      moduleprefs_description: An app which serves up the best app ever!
+      moduleprefs_nav_label: Nav Menu
+    fr:
+      moduleprefs_title: Le Meilleur app jamais
+      moduleprefs_description: Une application qui sert la meilleure enquête jamais !
+      moduleprefs_navmenu_label: Nav Menu
+  actions:
+    -
+      id: com.jivesoftware.places
+      path: jive/actions/places/*
+      label: Place action (simpleapp)
+      view: canvas
+  content:
+    -
+      type: html
+      view: embedded,canvas
+      href: /canvas.html
+    - type: html
+      view: home
+      href: /home.html
+      preferred_height: 400
+test:
+  host: test
+production:
+  host: test
