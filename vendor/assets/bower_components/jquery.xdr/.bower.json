@@ -1,0 +1,32 @@
+{
+  "name": "jquery.xdr",
+  "main": "dist/jquery.xdr.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/butchmarshall/jquery.xdr",
+  "authors": [
+    "Butch Marshall <butch.a.marshall@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  },
+  "devDependencies": {},
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "29855e02eca58a0089490a9a56269658c140aa9f"
+  },
+  "_source": "git://github.com/butchmarshall/jquery.xdr.git",
+  "_target": ">= 0.0.1",
+  "_originalSource": "jquery.xdr"
+}

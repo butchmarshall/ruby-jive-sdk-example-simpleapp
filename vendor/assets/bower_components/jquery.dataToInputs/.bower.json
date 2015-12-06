@@ -1,0 +1,32 @@
+{
+  "name": "jquery.dataToInputs",
+  "main": "dist/jquery.dataToInputs.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/butchmarshall/jquery.dataToInputs",
+  "authors": [
+    "Butch Marshall <butch.a.marshall@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  },
+  "devDependencies": {},
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "3e232df74c4ff41424963c2c0085a9330864deca"
+  },
+  "_source": "git://github.com/butchmarshall/jquery.dataToInputs.git",
+  "_target": ">= 0.0.1",
+  "_originalSource": "jquery.dataToInputs"
+}

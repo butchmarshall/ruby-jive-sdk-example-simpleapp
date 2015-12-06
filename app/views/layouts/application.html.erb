@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" ng-app="testApp" lang="en">
 <head>
-  <title>JiveSdkExampleSimpleapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<title>Simpleapp</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= javascript_include_tag 'application'  %>
+	<%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body ui-view>
 </body>
 </html>

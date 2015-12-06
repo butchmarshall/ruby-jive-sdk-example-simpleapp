@@ -1,0 +1,28 @@
+{
+	"name": "angular-api-adapter",
+	"main": [
+		"dist/angular-api-adapter.js"
+	],
+	"version": "0.0.1",
+	"homepage": "https://github.com/butchmarshall/angular-api-adapter",
+	"authors": [
+		"Butch Marshall <butch.a.marshall@gmail.com>"
+	],
+	"description": "Replacement for ngResource",
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"*.json",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"gulpfile.js"
+	],
+	"dependencies": {
+		"jquery": ">= 1.9.1",
+		"jquery.api-adapter": ">= 0.0.1"
+	},
+	"devDependencies": {
+	}
+}

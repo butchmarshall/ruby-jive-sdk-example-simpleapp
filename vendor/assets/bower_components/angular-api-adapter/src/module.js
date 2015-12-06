@@ -1,0 +1,1 @@
+var angularApiAdapter = angular.module('angularApiAdapter', []);

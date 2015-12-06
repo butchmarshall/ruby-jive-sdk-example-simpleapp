@@ -1,0 +1,27 @@
+{
+  "name": "jquery.request",
+  "main": "dist/jquery.request.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/butchmarshall/jquery.request",
+  "authors": [
+    "Butch Marshall <butch.a.marshall@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1",
+    "jquery.dataToJson": ">= 0.0.1",
+    "jquery.dataToInputs": ">= 0.0.1",
+    "jquery.xdr": ">= 0.0.1"
+  },
+  "devDependencies": {
+  }
+}

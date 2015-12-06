@@ -1,0 +1,32 @@
+{
+  "name": "jquery.dataToJson",
+  "main": "dist/jquery.dataToJson.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/butchmarshall/jquery.dataToJson",
+  "authors": [
+    "Butch Marshall <butch.a.marshall@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  },
+  "devDependencies": {},
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "f349fd6b8706eb1b3779ae4e512c5899929c1a6c"
+  },
+  "_source": "git://github.com/butchmarshall/jquery.dataToJson.git",
+  "_target": ">= 0.0.1",
+  "_originalSource": "jquery.dataToJson"
+}

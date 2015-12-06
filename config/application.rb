@@ -7,20 +7,32 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module JiveSdkExampleSimpleapp
-  class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+	class Application < Rails::Application
+		# Settings in config/environments/* take precedence over those specified here.
+		# Application configuration should go into files in config/initializers
+		# -- all .rb files in that directory are automatically loaded.
 
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+		# Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
+		# Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
+		# config.time_zone = 'Central Time (US & Canada)'
 
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+		# The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+		# config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+		# config.i18n.default_locale = :de
 
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
-  end
+		# Do not swallow errors in after_commit/after_rollback callbacks.
+		config.active_record.raise_in_transactional_callbacks = true
+		config.autoload_paths += %W(#{config.root}/lib)
+		config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+		config.middleware.use "Rack::Jive::SignedRequest" do
+			secret do |auth_header_params|
+				if add_on = JiveAddOns::AddOn.where(:client_id => auth_header_params["client_id"], :tenant_id => auth_header_params["tenant_id"]).first
+					add_on.client_secret
+				else
+					""
+				end
+			end
+		end
+	end
 end

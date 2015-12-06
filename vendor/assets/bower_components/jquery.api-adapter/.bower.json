@@ -1,0 +1,34 @@
+{
+  "name": "jquery.api-adapter",
+  "main": "dist/jquery.api-adapter.js",
+  "version": "0.0.7",
+  "homepage": "https://github.com/butchmarshall/jquery.api-adapter",
+  "authors": [
+    "Butch Marshall <butch.a.marshall@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1",
+    "jquery.request": ">= 0.0.1",
+    "jquery-deparam": ">= 0.3.0"
+  },
+  "devDependencies": {},
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.7",
+    "commit": "2edb66484e3387e62d32802d069759e22deeea1b"
+  },
+  "_source": "git://github.com/butchmarshall/jquery.api-adapter.git",
+  "_target": ">= 0.0.1",
+  "_originalSource": "jquery.api-adapter"
+}

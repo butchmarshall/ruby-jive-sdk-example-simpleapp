@@ -1,0 +1,40 @@
+'use strict';
+
+/**
+ * @ngdoc overview
+ * @name testApp
+ * @description
+ * # testApp
+ *
+ * Main module of the application.
+ */
+var testApp = angular
+	.module('testApp', [
+		'ngAnimate',
+		'ngCookies',
+		'ngResource',
+		'ngSanitize',
+		'ngTouch',
+		'ngTable',
+		'ui.bootstrap',
+		'ui.router',
+		'ui.utils',
+		'pascalprecht.translate',
+		'angularApiAdapter',
+		'angularMoment',
+		'testApp.Surveys'
+	])
+	.constant('angularMomentConfig', {
+		preprocess: 'utc',
+		timezone: 'America/Toronto'
+	})
+	.config(function ($urlRouterProvider) {
+		$urlRouterProvider.otherwise("surveys");
+	})
+	.run(
+		function($rootScope, $state, ApiAdapter) {
+			ApiAdapter.baseUrl = function() {
+				return "";
+			};
+		}
+	);
