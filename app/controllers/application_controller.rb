@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
 	end
 	
 	def test
-		render :text => "Hey - it worked!"
+		render :text => request.env["jive.email"]
 	end
 end

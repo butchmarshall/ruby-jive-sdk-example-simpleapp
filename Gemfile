@@ -45,7 +45,7 @@ group :development do
 	gem 'spring'
 end
 
-gem "rack-jive-signed_request"
+gem "rack-jive-signed_request"#, :path => "../rack-jive-signed_request"
 gem "rspec-rails"
 gem "factory_girl_rails"
 gem "angular-ui-bootstrap-rails"
