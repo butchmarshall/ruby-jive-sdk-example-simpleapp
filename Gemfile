@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
-	gem 'byebug'
+	#gem 'byebug'
 end
 
 group :development do
@@ -50,3 +50,5 @@ gem "rspec-rails"
 gem "factory_girl_rails"
 gem "angular-ui-bootstrap-rails"
 gem 'jive_add_ons', '>= 0.0.2'
+gem 'jive_tiles'
+gem 'jive_webhooks'
